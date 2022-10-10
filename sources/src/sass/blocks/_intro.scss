@@ -1,0 +1,138 @@
+.intro {
+  flex-grow: 1;
+
+  & .container {
+    max-width: 1328px;
+  }
+}
+
+.intro__wrapper {
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 170px 0 100px 27px;
+}
+
+.intro__title {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 100px;
+  letter-spacing: 0.4px;
+  color: var(--color-white);
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  & p {
+    margin: 0;
+  }
+
+  .intro__static {
+    margin-bottom: 24px;
+  }
+
+  .intro__frame {
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .intro__dynamic {
+    color: var(--color-yellow);
+    transform: translateY(120px);
+    opacity: 0;
+    animation: TextSlider 10s linear 0.5s infinite;
+    animation-fill-mode: forwards;
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.intro__info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro__about {
+  max-width: 596px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__scroll {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  animation: Rotate 0.5s linear 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  & p {
+    margin-left: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes Rotate {
+  0% {
+    transform: rotate (90deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes TextSlider {
+  0% {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  2% {
+    opacity: 1;
+  }
+  8% {
+    transform: translateY(0);
+  }
+  16% {
+    transform: translateY(0);
+  }
+  24% {
+    transform: translateY(-120px);
+  }
+  32% {
+    transform: translateY(-120px);
+  }
+  40% {
+    transform: translateY(-240px);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-240px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-image-arrow-down {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(176, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-image-arrow-down {
+	background-position: 0 100%;
+}
+@mixin svg-image-arrow-down-hover {
+	.svg-image-arrow-down {
+		@include svg-pos-image-arrow-down-hover
+	}
+}
+
+.svg-image-arrow-down:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(21, 18)*100%;
+}
+
+.svg-image-arrow-down-dims {
+	width: 18px;
+	height: 21px;
+}
+
+.svg-image-header-logo {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(176, 176)*100% auto;
+	width: 176px;
+
+}
+@mixin svg-pos-image-header-logo {
+	background-position: 0 0;
+}
+@mixin svg-image-header-logo-hover {
+	.svg-image-header-logo {
+		@include svg-pos-image-header-logo-hover
+	}
+}
+
+.svg-image-header-logo:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(64, 176)*100%;
+}
+
+.svg-image-header-logo-dims {
+	width: 176px;
+	height: 64px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }
