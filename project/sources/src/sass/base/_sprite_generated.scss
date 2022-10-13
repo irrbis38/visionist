@@ -6,13 +6,13 @@
 
 .svg-image-arrow-blue {
 	@extend %svg-common;
-	background-position: 79.82195845697329% 4.50387051372273%;
-	background-size: math.div(714, 40)*100% auto;
+	background-position: 36.76470588235294% 90.45801526717557%;
+	background-size: math.div(720, 40)*100% auto;
 	width: 40px;
 
 }
 @mixin svg-pos-image-arrow-blue {
-	background-position: 79.82195845697329% 4.50387051372273%;
+	background-position: 36.76470588235294% 90.45801526717557%;
 }
 @mixin svg-image-arrow-blue-hover {
 	.svg-image-arrow-blue {
@@ -35,13 +35,13 @@
 
 .svg-image-arrow-down {
 	@extend %svg-common;
-	background-position: 83.04597701149426% 4.447533009034052%;
-	background-size: math.div(714, 18)*100% auto;
+	background-position: 41.31054131054131% 84.64285714285714%;
+	background-size: math.div(720, 18)*100% auto;
 	width: 18px;
 
 }
 @mixin svg-pos-image-arrow-down {
-	background-position: 83.04597701149426% 4.447533009034052%;
+	background-position: 41.31054131054131% 84.64285714285714%;
 }
 @mixin svg-image-arrow-down-hover {
 	.svg-image-arrow-down {
@@ -64,13 +64,13 @@
 
 .svg-image-header-logo {
 	@extend %svg-common;
-	background-position: 100% 0;
-	background-size: math.div(714, 176)*100% auto;
+	background-position: 0 100%;
+	background-size: math.div(720, 176)*100% auto;
 	width: 176px;
 
 }
 @mixin svg-pos-image-header-logo {
-	background-position: 100% 0;
+	background-position: 0 100%;
 }
 @mixin svg-image-header-logo-hover {
 	.svg-image-header-logo {
@@ -91,33 +91,62 @@
 	height: 64px;
 }
 
-.svg-image-pathnew {
+.svg-image-header-logo-black {
 	@extend %svg-common;
 	background-position: 0 0;
-	background-size: math.div(714, 538)*100% auto;
-	width: 538px;
+	background-size: math.div(720, 720)*100% auto;
+	width: 720px;
 
 }
-@mixin svg-pos-image-pathnew {
+@mixin svg-pos-image-header-logo-black {
 	background-position: 0 0;
 }
-@mixin svg-image-pathnew-hover {
-	.svg-image-pathnew {
-		@include svg-pos-image-pathnew-hover
+@mixin svg-image-header-logo-black-hover {
+	.svg-image-header-logo-black {
+		@include svg-pos-image-header-logo-black-hover
 	}
 }
 
-.svg-image-pathnew:before {
+.svg-image-header-logo-black:before {
 	content:"";
 	display:block;
 	font-size:0;
 	line-height:0;
-	padding-top: math.div(1460, 538)*100%;
+	padding-top: math.div(237, 720)*100%;
 }
 
-.svg-image-pathnew-dims {
-	width: 538px;
-	height: 1460px;
+.svg-image-header-logo-black-dims {
+	width: 720px;
+	height: 237px;
+}
+
+.svg-image-quotes {
+	@extend %svg-common;
+	background-position: 27.24458204334365% 100%;
+	background-size: math.div(720, 74)*100% auto;
+	width: 74px;
+
+}
+@mixin svg-pos-image-quotes {
+	background-position: 27.24458204334365% 100%;
+}
+@mixin svg-image-quotes-hover {
+	.svg-image-quotes {
+		@include svg-pos-image-quotes-hover
+	}
+}
+
+.svg-image-quotes:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(64, 74)*100%;
+}
+
+.svg-image-quotes-dims {
+	width: 74px;
+	height: 64px;
 }
 
 

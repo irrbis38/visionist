@@ -2,31 +2,9 @@
   position: relative;
   z-index: 1;
   height: 100vh;
+  min-height: 900px;
+  padding-top: 90px;
 }
-
-// .build__container {
-//   padding: 0 ;
-// }
-
-// .build__title {
-//   // display: none;
-//   margin: 0 auto;
-//   // transform: translateY(300px);
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   z-index: 5;
-//   max-width: 743px;
-//   align-items: center;
-//   font-family: "Oswald", sans-serif;
-//   font-weight: 400;
-//   font-size: 140px;
-//   line-height: 140px;
-//   letter-spacing: 0.4px;
-//   color: var(--color-dark);
-//   // text-align: center;
-// }
 
 .build__wrapper {
   display: grid;
@@ -155,8 +133,6 @@
   line-height: 100px;
   letter-spacing: 0.4px;
   color: var(--color-white);
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!
-  // transform: translate(-52%, 125%) scale(1.56);
 }
 
 .build__text {

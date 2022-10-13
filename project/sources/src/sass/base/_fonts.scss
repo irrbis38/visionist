@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Nexa Trial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nexa Trial'),
+    url('../fonts/nexa-font/nexa-regular.woff') format('woff'),
+    url('../fonts/nexa-font/nexa-regular.otf') format('otf'),
+    url('../fonts/nexa-font/nexa-regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Nexa Trial';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nexa Trial'),
+    url('../fonts/nexa-font/nexa-bold.woff') format('woff'),
+    url('../fonts/nexa-font/nexa-bold.otf') format('otf'),
+    url('../fonts/nexa-font/nexa-bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Proxima Nova'),
+    url('../fonts/proxima-nova/proxima-nova.woff') format('woff'),
+    url('../fonts/proxima-nova/proxima-nova.otf') format('otf'),
+    url('../fonts/proxima-nova/proxima-nova.ttf') format('ttf');
+}

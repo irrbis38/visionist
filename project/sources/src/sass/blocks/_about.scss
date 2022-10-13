@@ -5,14 +5,13 @@ body {
 
 .about {
   position: relative;
-  z-index: -1;
-  // background-color: var(--color-light-blue);
 }
 
 .about__container {
   position: relative;
   z-index: 2;
   display: flex;
+  align-items: flex-end;
 }
 
 // first .about__wrapper
@@ -22,12 +21,13 @@ body {
   height: 100%;
   flex-shrink: 0;
   display: grid;
+  align-items: flex-end;
   grid-template-areas:
-    'title info'
-    'description info';
-  grid-template-columns: 49.06% 50.38%;
-  gap: 64px 0.56%;
-  padding: 108px 0 238px 203px;
+    "title info"
+    "description info";
+  grid-template-columns: 41.66% 48.89%;
+  gap: 64px 9.45%;
+  padding: 108px 0 238px 12.68%;
 }
 
 .about__title {
@@ -36,7 +36,7 @@ body {
   max-width: 482px;
   grid-area: title;
   margin-left: 20.75%;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 90px;
   line-height: 100px;
@@ -51,7 +51,7 @@ body {
 .about__description {
   max-width: 408px;
   grid-area: description;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
@@ -63,11 +63,9 @@ body {
   grid-area: info;
   padding-top: 164px;
   justify-self: end;
-  align-self: flex-end;
 }
 
 .about__img {
-  max-width: 737px;
   img {
     display: block;
     width: 100%;
@@ -103,7 +101,7 @@ body {
 
   p {
     margin-bottom: 4px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -129,8 +127,8 @@ body {
 .about__wrapper:nth-child(2) {
   display: grid;
   grid-template-areas:
-    'info title '
-    'info description';
+    "info title "
+    "info description";
   grid-template-columns: 46.75% 48.81%;
   gap: 73px 4.44%;
   margin: 0;
@@ -149,6 +147,7 @@ body {
 
   .about__info {
     padding-top: 0;
+    align-content: flex-end;
   }
 
   .about__img {
@@ -169,7 +168,6 @@ body {
   position: absolute;
   top: 16px;
   left: 305px;
-  // width: 33.5%;
   height: auto;
   z-index: 1;
 }

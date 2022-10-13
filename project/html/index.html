@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&amp;family=Oswald:wght@400;500&amp;family=Poppins:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
@@ -34,7 +35,7 @@
       </div>
       <header class="header">
         <div class="container">
-          <div class="header__wrapper"><span class="icon svg-image-header-logo"></span>
+          <div class="header__wrapper"><span class="icon svg-image-header-logo"></span><span class="icon svg-image-header-logo-black"></span>
             <nav class="header__navbar">
               <ul class="header__list">
                 <li class="header__link active"><a>Home</a></li>
@@ -160,7 +161,7 @@
               </ul>
             </div>
             <div class="build__info">
-              <h2 class="build__title">Build&nbspyour career&nbspwith&nbspUs</h2>
+              <h2 class="build__title">Build&nbsp;your career&nbsp;with&nbsp;Us</h2>
               <p class="build__text build__hidden">
                 Visionist offers competitive salaries,
                 amazing benefits, and a place where you
@@ -169,13 +170,96 @@
                 are celebrated, and leadership knows
                 your value.
               </p>
-              <div class="build__more build__hidden">
+              <div class="build__more">
                 <p>More about careers</p><img src="images/arrow45.svg" alt=""><a href="#"></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="company">
+        <section class="news">
+          <div class="news__bg"></div>
+          <svg class="news-pathnew" width="536" height="1458" viewBox="0 0 536 1458" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="news__path" d="M536 0V236.452L527.079 236.636C438.049 238.839 388.891 293.179 388.891 389.742L388.527 891.836L388.345 1085.51V1086.25C365.223 1271.11 227.582 1458 9.10326 1458H0V1209.25L8.19295 1208.33C94.856 1199.7 146.563 1140.4 146.563 1049.9L146.38 369.548C146.563 165.774 317.34 0 526.897 0H536Z" fill="#1B75BC" fill-opacity="0.06"></path>
+          </svg>
+          <div class="news__header">
+            <h2 class="news__title">Company News</h2>
+            <div class="news__more">
+              <p>More latest news</p><img src="images/arrow-small-blue.svg" alt=""><a href="#"></a>
+            </div>
+          </div>
+          <div class="news__slider swiper-container">
+            <div class="news__wrapper swiper-wrapper">
+              <div class="news__item swiper-slide">
+                <div class="news__img"> 
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" srcset="images/news1.webp, images/news1@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news1.jpg" srcset="images/news1.jpg, images/news1@2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
+                </div>
+              </div>
+              <div class="news__item swiper-slide">
+                <div class="news__img"> 
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" srcset="images/news2.webp, images/news2@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news2.jpg" srcset="images/news2.jpg, images/news2@2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
+                </div>
+              </div>
+              <div class="news__item swiper-slide">
+                <div class="news__img"> 
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" srcset="images/news3.webp, images/news3@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news3.jpg" srcset="images/news3.jpg, images/news3@2x.jpg 2x" alt=""/>
+                  </picture>
+                </div>
+                <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="testimonials__block">
+            <h2 class="testimonials__title">Testimonials</h2><span class="icon svg-image-quotes"></span>
+            <div class="testimonials__container">
+              <div class="testimonials__slider swiper-container">
+                <div class="testimonials__wrapper swiper-wrapper">
+                  <p class="testimonials__item swiper-slide">
+                    I would say if I had to choose any company to spend 8+ hours of my day I would pick Visionist 10
+                    times out of 10. 
+                  </p>
+                  <p class="testimonials__item swiper-slide">Company atmosphere is very open and supportive.</p>
+                </div>
+              </div>
+              <div class="testimonials__navbar">
+                <div class="testimonials__navItem prev">
+                  <div class="testimonials__prev"></div>
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.636 6.81766L3.45369 17L13.636 27.1823" stroke="#1B75BC" stroke-width="2"></path>
+                    <path d="M3.45257 17L30.6055 17" stroke="#1B75BC" stroke-width="2"></path>
+                  </svg>
+                </div>
+                <div class="testimonials__navItem next">
+                  <div class="testimonials__next"></div>
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.364 27.1823L30.5463 17L20.364 6.81766" stroke="#1B75BC" stroke-width="2"></path>
+                    <path d="M30.5474 17H3.39453" stroke="#1B75BC" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__info">
+              <div class="testimonials__range"><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""></div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">Footer</div>
@@ -184,6 +268,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
