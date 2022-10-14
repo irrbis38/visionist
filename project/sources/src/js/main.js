@@ -133,10 +133,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   new ScrollMagic.Scene({
     triggerElement: ".news",
     triggerHook: "onLeave",
-    duration: "80%",
+    duration: "70%",
   })
     .setTween(TL_newFigureTransform)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   // .news-pathnew change color
@@ -151,10 +151,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   new ScrollMagic.Scene({
     triggerElement: ".news",
     triggerHook: "onLeave",
-    duration: "80%",
+    duration: "70%",
   })
     .setTween(TL_newPathChangeColor)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   // Slider in news block
@@ -196,4 +196,43 @@ document.addEventListener("DOMContentLoaded", function (event) {
       prevEl: ".next",
     },
   });
+
+  // map
+  const body = document.body;
+  const mapOpener = document.querySelector(".footer__map");
+  const map = document.querySelector(".map");
+  const mapOverlay = document.querySelector(".map__overlay");
+  const mapClose = document.querySelector(".map__close");
+
+  mapOpener.addEventListener("click", () => {
+    map.classList.add("active");
+    body.classList.add("lock");
+  });
+
+  mapOverlay.addEventListener("click", () => {
+    map.classList.remove("active");
+    body.classList.remove("lock");
+  });
+
+  mapClose.addEventListener("click", () => {
+    map.classList.remove("active");
+    body.classList.remove("lock");
+  });
+
+  // Scroll over the page
+  // const scrollButton = document.querySelector(".intro__scroll");
+
+  // const scrolldelay = setTimeout(pageScroll, 1);
+
+  // function pageScroll() {
+  //   window.scrollBy(0, 5);
+  //   scrolldelay;
+  // }
+
+  // scrollButton.addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   pageScroll();
+  // });
+
+  // console.dir(window);
 });

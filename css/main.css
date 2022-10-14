@@ -307,6 +307,9 @@ body {
   padding: 0;
   margin: 0
 }
+body.lock {
+  overflow: hidden
+}
 .header {
   height: 90px;
   font-family: Oswald,sans-serif;
@@ -1217,19 +1220,369 @@ body {
 .testimonials__info {
   position: absolute;
   top: 0;
-  left: 69.19%;
-  z-index: 10
+  right: 380px;
+  z-index: 10;
+  padding-top: 100px
 }
 .testimonials__range {
   position: relative;
   z-index: 5;
-  margin-left: 150px;
-  background-color: red
+  width: 172px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px)
+}
+.testimonials__range img {
+  margin-right: 13px
+}
+.testimonials__range img:last-child {
+  margin-right: 0
+}
+.testimonials__value {
+  font-family: "Nexa Trial",sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 121px;
+  letter-spacing: .4px;
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+  margin-bottom: 31px;
+  color: var(--color-white)
+}
+.testimonials__name {
+  margin-bottom: 31px;
+  font-family: "Nexa Trial",sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: .4px;
+  color: var(--color-white)
+}
+.testimonials__add {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+.testimonials__zero {
+  width: 70px;
+  height: 99px;
+  margin-bottom: 21px
+}
+.testimonials__zero img {
+  display: block;
+  width: 100%;
+  height: auto
+}
+.testimonials__view {
+  position: relative;
+  -webkit-transform: translate(60px,38px);
+  transform: translate(60px,38px)
+}
+.testimonials__square {
+  width: 90px;
+  height: 90px;
+  background: #02ad23;
+  border: 2px solid #fff;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(45deg) translate(-8%,5%);
+  transform: rotate(45deg) translate(-8%,5%);
+  -webkit-filter: drop-shadow(4px 4px 40px rgba(27, 117, 188, .4));
+  filter: drop-shadow(4px 4px 40px rgba(27, 117, 188, .4))
+}
+.testimonials__text {
+  position: absolute;
+  top: 24px;
+  left: 16px
+}
+.testimonials__text p {
+  font-family: Poppins,sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--color-white)
+}
+.testimonials__text img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto
 }
 .footer {
   position: relative;
   z-index: 2;
-  padding: 100px;
-  background-color: #333
+  padding: 100px 0 50px;
+  color: var(--color-white);
+  background: var(--color-blue) url(../images/footer-bg.png) left bottom/36.31% no-repeat
+}
+.footer .container {
+  max-width: 1254px;
+  padding: 0 30px
+}
+.footer__wrapper {
+  display: grid;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  grid-template-areas: "info links follow" "awards awards awards" "legal legal legal";
+  grid-template-columns: 364px 262px 262px
+}
+.footer__info {
+  grid-area: info;
+  margin-bottom: 72px;
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px
+}
+.footer__logo {
+  margin-bottom: 40px
+}
+.footer__local {
+  max-width: 245px;
+  margin-bottom: 60px
+}
+.footer__adress,
+.footer__email,
+.footer__phone {
+  margin-bottom: 12px
+}
+.footer__adress a,
+.footer__email a,
+.footer__phone a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer
+}
+.footer__map {
+  width: 276px;
+  height: 152px;
+  border: 4px solid var(--color-white)
+}
+.footer__map img {
+  display: block;
+  width: 100%;
+  height: 144px
+}
+.footer__links {
+  grid-area: links
+}
+.footer__follow {
+  grid-area: follow
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px
+}
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+.footer__item {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 2px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff
+}
+.footer__item a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  cursor: pointer
+}
+.footer__item:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white)
+}
+.footer__item:hover .footer__arrow path {
+  stroke: var(--color-blue)
+}
+.footer__item:hover .footer__icon path {
+  fill: var(--color-blue)
+}
+.footer__text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.footer__icon {
+  margin-right: 12px
+}
+.footer__awards {
+  grid-area: awards;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 64px
+}
+.footer__baltimore {
+  width: 65px;
+  height: 120px;
+  padding-top: 64px;
+  padding: 64px 5px 0 5px;
+  background: url(../images/award-baltimore.png) center/contain no-repeat
+}
+.footer__baltimore span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: Poppins,sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  background-color: #febf3f
+}
+.footer__great {
+  width: 74px;
+  height: 120px;
+  background: url(../images/award-great.png) center/contain no-repeat
+}
+.footer__technology {
+  width: 110px;
+  height: 80px;
+  padding: 53px 20px 0;
+  background: url(../images/award-technology.png) center/contain no-repeat
+}
+.footer__technology span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .5px;
+  color: #000241;
+  background-color: #fdb813
+}
+.footer__legal {
+  grid-area: legal;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,.2)
+}
+.footer__private {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--color-white)
+}
+.footer__private {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.footer__terms {
+  margin-right: 24px
+}
+.footer__privacy,
+.footer__terms {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: var(--color-white);
+  cursor: pointer
+}
+.map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000
+}
+.map.active {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.map__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0,0,0,.5)
+}
+.map__close {
+  position: absolute;
+  top: 7vh;
+  right: 7vw;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 101
+}
+.map__frame {
+  position: relative;
+  z-index: 100;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px 0 rgba(0,0,0,.49)
 }
 /*# sourceMappingURL=maps/main.css.map */

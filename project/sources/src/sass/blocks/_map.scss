@@ -1,0 +1,44 @@
+.map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  &.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.map__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.map__close {
+  position: absolute;
+  top: 7vh;
+  right: 7vw;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.map__frame {
+  position: relative;
+  z-index: 100;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.49);
+}

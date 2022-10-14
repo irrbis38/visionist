@@ -1,2 +1,132 @@
 footer.footer
-    .container Footer
+    .container
+        .footer__wrapper
+            .footer__info
+                .footer__logo
+                    //- +icon('footer-logo')
+                    img(src="images/footer-logo.svg" alt="")
+                .footer__local
+                    p.footer__adress.
+                        6700 Alexander Bell Drive, Suite 440, Columbia MD, 21046
+                    p.footer__email
+                        a(href='mailto:contactus@visionistinc.com') contactus@visionistinc.com
+                    p.footer__phone
+                        a(href="tel: 443-288-1776") Phone: 443-288-1776
+                    p.footer__fax Fax: 443-288-1776
+                .footer__map
+                    +picture('map', 'png', '2x')
+            .footer__links
+                h3.footer__title Links
+                ul.footer__list
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Home
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Our services
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Our team
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Career
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Employee Portal
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span News
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                    li.footer__item
+                        a(href="#")
+                        .footer__text
+                            span Contact us
+                        svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+            .footer__follow            
+                h3.footer__title Follow us
+                ul.footer__list
+                        li.footer__item
+                            a(href="#")
+                            .footer__text
+                                svg(class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z" fill="#B9B9B9")
+                                span Facebook
+                            svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                        li.footer__item
+                            a(href="#")
+                            .footer__text
+                                svg(class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M21.9698 6.46378C21.4537 7.15213 20.83 7.75258 20.1226 8.24195C20.1226 8.42177 20.1226 8.60158 20.1226 8.79139C20.1282 12.0568 18.8239 15.1879 16.5019 17.4828C14.18 19.7777 11.0347 21.0443 7.77114 20.9988C5.8844 21.0051 4.02183 20.5743 2.32932 19.7401C2.23806 19.7003 2.1792 19.61 2.17955 19.5103V19.4005C2.17955 19.257 2.29578 19.1407 2.43916 19.1407C4.29377 19.0796 6.08222 18.4366 7.55147 17.3026C5.87279 17.2688 4.3624 16.2744 3.66731 14.7453C3.6322 14.6617 3.64313 14.5659 3.69616 14.4925C3.74918 14.419 3.83663 14.3785 3.92692 14.3856C4.43711 14.4369 4.9524 14.3894 5.44464 14.2458C3.59151 13.8611 2.1991 12.3227 1.99982 10.4397C1.99274 10.3494 2.03322 10.2619 2.10664 10.2088C2.18005 10.1558 2.2758 10.1448 2.35928 10.18C2.85658 10.3994 3.39341 10.515 3.93691 10.5196C2.31313 9.45384 1.61177 7.42672 2.22948 5.58469C2.29324 5.4057 2.44643 5.27347 2.63275 5.2366C2.81907 5.19972 3.01104 5.26365 3.13811 5.40487C5.32929 7.73695 8.34002 9.12662 11.5355 9.28088C11.4536 8.95427 11.4134 8.61862 11.4157 8.28191C11.4455 6.51636 12.538 4.94357 14.1815 4.29986C15.825 3.65615 17.6943 4.06893 18.9144 5.34494C19.746 5.18651 20.55 4.90716 21.3008 4.51579C21.3558 4.48145 21.4255 4.48145 21.4805 4.51579C21.5148 4.57081 21.5148 4.64058 21.4805 4.6956C21.1169 5.52835 20.5025 6.2268 19.7232 6.69355C20.4056 6.6144 21.0761 6.45341 21.7201 6.21404C21.7744 6.17713 21.8456 6.17713 21.8999 6.21404C21.9453 6.23482 21.9793 6.27457 21.9927 6.32269C22.0062 6.37081 21.9978 6.42242 21.9698 6.46378Z" fill="#B9B9B9")
+                                span Twitter
+                            svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                        li.footer__item
+                            a(href="#")
+                            .footer__text
+                                svg(class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z" fill="#B9B9B9")
+                                span Linkedin
+                            svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                        li.footer__item
+                            a(href="#")
+                            .footer__text
+                                svg(class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M21.9995 12.0082C21.9963 16.3106 19.2415 20.1287 15.1595 21.4882C15.0067 21.5353 14.8408 21.5095 14.7095 21.4182C14.5783 21.3227 14.5003 21.1705 14.4995 21.0082V18.3382C14.5211 17.6191 14.3484 16.9074 13.9995 16.2782C13.9467 16.1959 13.9467 16.0905 13.9995 16.0082C14.0401 15.9323 14.1144 15.8804 14.1995 15.8682C16.6395 15.6182 17.9995 14.6482 17.9995 12.0082C18.0583 10.7756 17.631 9.56907 16.8095 8.64821C16.9293 8.25922 16.9933 7.85519 16.9995 7.44821C16.9952 7.08333 16.9448 6.72045 16.8495 6.36821C16.7866 6.13333 16.561 5.98009 16.3195 6.00821C15.4033 6.13826 14.5504 6.55073 13.8795 7.18821C12.6377 6.94827 11.3614 6.94827 10.1195 7.18821C9.44867 6.55073 8.59576 6.13826 7.67952 6.00821C7.438 5.98009 7.2124 6.13333 7.14952 6.36821C7.05421 6.72045 7.00381 7.08333 6.99952 7.44821C7.00574 7.85519 7.06971 8.25922 7.18952 8.64821C6.368 9.56907 5.9407 10.7756 5.99952 12.0082C5.99952 14.7882 7.50952 15.7182 10.2795 15.9482C9.93566 16.3988 9.69962 16.9222 9.58952 17.4782C9.58952 17.4782 9.58952 17.5482 9.58952 17.5982C9.5847 17.6448 9.5847 17.6917 9.58952 17.7382C9.54791 18.0526 9.26524 18.2778 8.94952 18.2482C8.79897 18.2411 8.65198 18.2001 8.51952 18.1282C7.97473 17.7964 7.4938 17.3697 7.09952 16.8682C6.84831 16.5834 6.58122 16.3129 6.29952 16.0582C6.12053 15.9033 5.92221 15.7722 5.70952 15.6682C5.56047 15.5845 5.37856 15.5845 5.22952 15.6682C5.08644 15.76 4.9998 15.9182 4.99952 16.0882V16.1482C4.9998 16.3182 5.08644 16.4764 5.22952 16.5682C5.58849 16.8687 5.89882 17.2229 6.14952 17.6182C6.5729 18.2816 7.11135 18.8641 7.73952 19.3382C8.1534 19.6157 8.64126 19.762 9.13952 19.7582H9.49952V21.0082C9.49874 21.1705 9.42077 21.3227 9.28952 21.4182C9.15826 21.5095 8.9923 21.5353 8.83952 21.4882C3.99156 19.8735 1.14076 14.8637 2.22889 9.87112C3.31702 4.87854 7.99401 1.5094 13.0742 2.05854C18.1544 2.60768 22.0034 6.89843 21.9995 12.0082Z" fill="#B9B9B9")
+                                span Github
+                            svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+                        li.footer__item
+                            a(href="#")
+                            .footer__text
+                                svg(class="footer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M16.2852 19.1562H4.91016C4.91016 20.75 6.19141 22 7.75391 22H16.2539C17.8164 22 19.0977 20.7188 19.0977 19.1562V7.40625C19.0977 7.34375 19.0664 7.3125 19.0039 7.3125H16.3789C16.3164 7.3125 16.2852 7.34375 16.2852 7.40625V19.1562ZM16.2852 2C17.8477 2 19.1289 3.28125 19.1289 4.875H7.75391V16.625C7.75391 16.6875 7.69141 16.7188 7.66016 16.7188H5.00391C4.94141 16.7188 4.91016 16.6562 4.91016 16.625V4.875C4.91016 3.28125 6.19141 2 7.75391 2H16.2852Z" fill="#B9B9B9")
+                                span Glassdoor
+                            svg(class="footer__arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1.08771 13.8184L13.0877 1.90961M13.0877 1.90961L3.0877 1.90961M13.0877 1.90961L13.0877 11.8184" stroke="#fff" stroke-width="2")
+            .footer__awards
+                .footer__baltimore
+                    span 2015
+                .footer__baltimore
+                    span 2016
+                .footer__baltimore
+                    span 2017
+                .footer__baltimore
+                    span 2018
+                .footer__baltimore
+                    span 2019
+                .footer__baltimore
+                    span 2020
+                .footer__baltimore
+                    span 2021
+                .footer__great
+                .footer__technology
+                    span 2014
+                .footer__technology
+                    span 2015
+                .footer__technology
+                    span 2016
+            .footer__legal
+                p.footer__rights © 2022. Visionist Inc. All Rights Reserved.
+                p.footer__private
+                    a.footer__terms Terms & Conditions
+                    a.footer__privacy Privacy Policy
