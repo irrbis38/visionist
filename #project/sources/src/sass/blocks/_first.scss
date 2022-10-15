@@ -28,3 +28,18 @@
     min-height: 100%;
   }
 }
+
+@media (max-width: 991px) {
+  .first__bg video {
+    transform: translate(-30%, -0);
+  }
+}
+@media (max-width: 575px) {
+  .first {
+    min-height: 740px;
+    background-color: rgba(27, 117, 188, 0.7);
+  }
+  .first__bg {
+    display: none;
+  }
+}

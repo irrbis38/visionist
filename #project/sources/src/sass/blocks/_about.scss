@@ -12,6 +12,8 @@ body {
   z-index: 2;
   display: flex;
   align-items: flex-end;
+  max-width: 1660px;
+  padding: 0 30px;
 }
 
 // first .about__wrapper
@@ -23,8 +25,8 @@ body {
   display: grid;
   align-items: flex-end;
   grid-template-areas:
-    "title info"
-    "description info";
+    'title info'
+    'description info';
   grid-template-columns: 41.66% 48.89%;
   gap: 64px 9.45%;
   padding: 108px 0 238px 12.68%;
@@ -36,7 +38,7 @@ body {
   max-width: 482px;
   grid-area: title;
   margin-left: 20.75%;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 90px;
   line-height: 100px;
@@ -51,7 +53,7 @@ body {
 .about__description {
   max-width: 408px;
   grid-area: description;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
@@ -101,7 +103,7 @@ body {
 
   p {
     margin-bottom: 4px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -127,8 +129,8 @@ body {
 .about__wrapper:nth-child(2) {
   display: grid;
   grid-template-areas:
-    "info title "
-    "info description";
+    'info title '
+    'info description';
   grid-template-columns: 46.75% 48.81%;
   gap: 73px 4.44%;
   margin: 0;
@@ -167,7 +169,190 @@ body {
 .svg-image-pathnew {
   position: absolute;
   top: 16px;
-  left: 305px;
+  left: 19%;
   height: auto;
   z-index: 1;
+}
+
+@media (max-width: 1599px) {
+  .about__wrapper {
+    padding: 88px 0 208px 20px;
+
+    &:last-child {
+      padding: 78px 0 208px 20px;
+    }
+  }
+
+  .about__title {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .about__description {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .about__img img {
+    width: 400px;
+  }
+
+  .about__square {
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg) translate(-106px, 0);
+  }
+}
+
+@media (max-width: 1199px) {
+  .about__container {
+    padding: 0;
+  }
+  .about__wrapper {
+    padding: 80px 0 208px 50px;
+
+    &:last-child {
+      padding: 78px 0 208px 120px;
+      gap: 60px 4.44%;
+    }
+  }
+
+  .about__title {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about__wrapper {
+    height: 100vh;
+    min-height: 700px;
+  }
+
+  .about__title {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .about__img img {
+    width: 320px;
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about__wrapper:nth-child(2) .about__description {
+    margin-left: 72px;
+  }
+
+  .about__square {
+    width: 120px;
+    height: 120px;
+    transform: rotate(45deg) translate(-85px, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .about__wrapper,
+  .about__wrapper:nth-child(2) {
+    grid-template-areas:
+      'title'
+      'description'
+      'info';
+    grid-template-columns: 1fr;
+    gap: 38px 0;
+  }
+
+  .about__title {
+    justify-self: start;
+    margin: 0;
+  }
+
+  .about__wrapper:nth-child(2) .about__description {
+    justify-self: auto;
+    max-width: 480px;
+    margin: 0;
+  }
+
+  .about__wrapper:nth-child(2) .about__info {
+    justify-self: auto;
+  }
+
+  .about__wrapper:nth-child(2) .about__text {
+    left: 160px;
+    right: auto;
+  }
+
+  .about__wrapper:nth-child(2) .about__img img {
+    width: 200px;
+  }
+
+  .about__wrapper:nth-child(2) .about__square {
+    left: 200px;
+  }
+
+  .about__info {
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    display: block;
+  }
+  .about__wrapper,
+  .about__wrapper:nth-child(2) {
+    display: block;
+    padding: 70px 15px;
+  }
+
+  .about__wrapper:nth-child(2) {
+    padding-left: 30px;
+
+    & .about__description {
+      margin-bottom: 28px;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 28px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .about__description {
+    min-height: 150px;
+    margin-bottom: 28px;
+  }
+
+  .about__img,
+  .about__wrapper:nth-child(2) .about__img {
+    width: 100%;
+    height: 187px;
+    img {
+      height: 187px;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  }
+
+  .about__more {
+    transform: translateX(50%);
+  }
+
+  .about__wrapper:nth-child(2) .about__square {
+    left: 0;
+  }
+
+  .about__wrapper:nth-child(2) .about__text {
+    left: -40px;
+  }
+
+  // .svg-image-pathnew {
+  //   left: 150px;
+  // }
 }

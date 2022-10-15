@@ -15,7 +15,7 @@
 }
 
 .intro__title {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   font-weight: 400;
   font-size: 120px;
@@ -63,7 +63,7 @@
 
 .intro__about {
   max-width: 596px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
@@ -81,7 +81,7 @@
 
   & p {
     margin-left: 12px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
@@ -134,5 +134,61 @@
   100% {
     transform: translateY(-240px);
     opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .intro__title {
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  .intro__title .intro__static {
+    margin-bottom: 10px;
+  }
+
+  .intro__about {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__about {
+    margin: 0;
+    max-width: 320px;
+    font-size: 24px;
+  }
+
+  .svg-image-arrow-down {
+    width: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .intro__wrapper {
+    padding: 0;
+  }
+
+  .intro__info {
+    display: block;
+  }
+
+  .intro__about {
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+
+    & .intro__static {
+      margin: 0;
+    }
   }
 }
