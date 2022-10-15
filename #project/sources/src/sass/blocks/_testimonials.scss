@@ -38,6 +38,8 @@
 }
 
 .testimonials__container {
+  position: relative;
+  z-index: 15;
   max-width: 1194px;
   padding: 131px 27px 0;
   margin: 0 auto;
@@ -109,6 +111,12 @@
   padding-top: 100px;
 }
 
+.news-pathnew {
+  position: absolute;
+  top: -653px;
+  left: -20px
+}
+
 .testimonials__range {
   position: relative;
   z-index: 5;
@@ -127,6 +135,8 @@
 }
 
 .testimonials__value {
+  position: relative;
+  z-index: 5;
   font-family: 'Nexa Trial', sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -138,6 +148,8 @@
 }
 
 .testimonials__name {
+  position: relative;
+  z-index: 5;
   margin-bottom: 31px;
   font-family: 'Nexa Trial', sans-serif;
   font-weight: 700;
@@ -148,6 +160,8 @@
 }
 
 .testimonials__add {
+  position: relative;
+  z-index: 5;
   display: flex;
 }
 
@@ -242,16 +256,9 @@
     min-height: 700px;
   }
 
-  .testimonials__range,
-  .testimonials__value,
-  .testimonials__name,
-  .testimonials__zero {
-    display: none;
-  }
-
   .testimonials__info {
     left: 290px;
-    top: 420px;
+    top: 200px;
     right: auto;
     width: 375px;
   }
@@ -293,6 +300,13 @@
 
   .testimonials__info {
     left: 125px;
-    top: 370px;
+    // top: 370px;
+  }  
+
+  .testimonials__range,
+  .testimonials__value,
+  .testimonials__name,
+  .testimonials__add {
+    display: none;
   }
 }
