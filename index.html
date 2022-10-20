@@ -29,7 +29,7 @@
   <body>
     <div class="first">
       <div class="first__bg">
-        <video autoplay muted loop>
+        <video muted preload="auto" autoplay="autoplay" loop="loop">
           <source src="./visionist-home-bg.mp4" type="video/mp4">
         </video>
       </div>
@@ -85,6 +85,9 @@
       </div>
     </div>
     <main class="main">
+      <svg class="svg-image-pathnew" width="536" height="1458" viewBox="0 0 536 1458" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="blue__path" d="M536 0V236.452L527.079 236.636C438.049 238.839 388.891 293.179 388.891 389.742L388.527 891.836L388.345 1085.51V1086.25C365.223 1271.11 227.582 1458 9.10326 1458H0V1209.25L8.19295 1208.33C94.856 1199.7 146.563 1140.4 146.563 1049.9L146.38 369.548C146.563 165.774 317.34 0 526.897 0H536Z" fill="#1B75BC" fill-opacity="0.06"></path>
+      </svg>
       <section class="about"> 
         <div class="about__container">
           <div class="about__wrapper about__first">
@@ -105,7 +108,7 @@
               <div class="about__more">
                 <div class="about__square"></div>
                 <div class="about__text">
-                  <p>More about Who We are</p><img src="images/arrow45.svg" alt=""><a class="about__link"></a>
+                  <p>More about Who We are</p><span class="icon svg-image-arrow45"></span><a class="about__link"></a>
                 </div>
               </div>
             </div>
@@ -125,15 +128,12 @@
               <div class="about__more">
                 <div class="about__square"></div>
                 <div class="about__text">
-                  <p>More about What We do</p><img src="images/arrow45.svg" alt=""><a class="about__link"></a>
+                  <p>More about What We do</p><span class="icon svg-image-arrow45"></span><a class="about__link"></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <svg class="svg-image-pathnew" width="536" height="1458" viewBox="0 0 536 1458" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="blue__path" d="M536 0V236.452L527.079 236.636C438.049 238.839 388.891 293.179 388.891 389.742L388.527 891.836L388.345 1085.51V1086.25C365.223 1271.11 227.582 1458 9.10326 1458H0V1209.25L8.19295 1208.33C94.856 1199.7 146.563 1140.4 146.563 1049.9L146.38 369.548C146.563 165.774 317.34 0 526.897 0H536Z" fill="#1B75BC" fill-opacity="0.06"></path>
-        </svg>
       </section>
       <section class="build">
         <div class="container">
@@ -175,6 +175,7 @@
               </div>
               <div class="build__info">
                 <h2 class="build__title">Build&nbsp;your career&nbsp;with&nbsp;Us</h2>
+                <h2 class="build__titleSmall">Build&nbsp;your career&nbsp;with&nbsp;Us</h2>
                 <p class="build__text build__hidden">
                   Visionist offers competitive salaries,
                   amazing benefits, and a place where you
@@ -184,7 +185,7 @@
                   your value.
                 </p>
                 <div class="build__more">
-                  <p>More about careers</p><img src="images/arrow45.svg" alt=""><a href="#"></a>
+                  <p>More about careers</p><span class="icon svg-image-arrow45"></span><a href="#"></a>
                 </div>
               </div>
             </div>
@@ -198,7 +199,7 @@
             <div class="news__header">
               <h2 class="news__title">Company News</h2>
               <div class="news__more">
-                <p>More latest news</p><img src="images/arrow-small-blue.svg" alt=""><a href="#"></a>
+                <p>More latest news</p><span class="icon svg-image-arrow-small-blue"></span><a href="#"></a>
               </div>
             </div>
             <div class="news__slider swiper-container">
@@ -209,7 +210,7 @@
                       <source class="object-fit-cover" srcset="images/news1.webp, images/news1@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news1.jpg" srcset="images/news1.jpg, images/news1@2x.jpg 2x" alt=""/>
                     </picture>
                   </div>
-                  <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <div class="news__description"><span class="icon svg-image-arrow-small-blue"></span>
                     <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
                   </div>
                 </div>
@@ -219,7 +220,7 @@
                       <source class="object-fit-cover" srcset="images/news2.webp, images/news2@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news2.jpg" srcset="images/news2.jpg, images/news2@2x.jpg 2x" alt=""/>
                     </picture>
                   </div>
-                  <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <div class="news__description"><span class="icon svg-image-arrow-small-blue"></span>
                     <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
                   </div>
                 </div>
@@ -229,7 +230,7 @@
                       <source class="object-fit-cover" srcset="images/news3.webp, images/news3@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/news3.jpg" srcset="images/news3.jpg, images/news3@2x.jpg 2x" alt=""/>
                     </picture>
                   </div>
-                  <div class="news__description"><img src="images/arrow-small-blue.svg" alt="">
+                  <div class="news__description"><span class="icon svg-image-arrow-small-blue"></span>
                     <p>Simply dummy text of the printing and typesetting.</p><a href="#"></a>
                   </div>
                 </div>
@@ -272,19 +273,22 @@
                 <svg class="news-pathnew" width="536" height="1458" viewBox="0 0 536 1458" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="news__path" d="M536 0V236.452L527.079 236.636C438.049 238.839 388.891 293.179 388.891 389.742L388.527 891.836L388.345 1085.51V1086.25C365.223 1271.11 227.582 1458 9.10326 1458H0V1209.25L8.19295 1208.33C94.856 1199.7 146.563 1140.4 146.563 1049.9L146.38 369.548C146.563 165.774 317.34 0 526.897 0H536Z" fill="#1B75BC" fill-opacity="0.06"></path>
                 </svg>
-                <div class="testimonials__range"><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""><img src="images/star.svg" alt=""></div>
-                <p class="testimonials__value">4.9</p>
-                <p class="testimonials__name">Glassdoor Reviews</p>
-                <div class="testimonials__add">
-                  <div class="testimonials__zero">
-                    <picture class="picture object-fit-cover">
-                      <source class="object-fit-cover" srcset="images/zero.webp, images/zero@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/zero.png" srcset="images/zero.png, images/zero@2x.png 2x" alt=""/>
-                    </picture>
+                <div class="testimonials__infowrapper">
+                  <div class="testimonials__range"><span class="icon svg-image-star"></span><span class="icon svg-image-star"></span><span class="icon svg-image-star"></span><span class="icon svg-image-star"></span><span class="icon svg-image-star"></span>
                   </div>
-                  <div class="testimonials__view">
-                    <div class="testimonials__square"></div>
-                    <div class="testimonials__text">
-                      <p>View</p><img src="images/arrow45.svg" alt="">
+                  <p class="testimonials__value">4.9</p>
+                  <p class="testimonials__name">Glassdoor Reviews</p>
+                  <div class="testimonials__add">
+                    <div class="testimonials__zero">
+                      <picture class="picture object-fit-cover">
+                        <source class="object-fit-cover" srcset="images/zero.webp, images/zero@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/zero.png" srcset="images/zero.png, images/zero@2x.png 2x" alt=""/>
+                      </picture>
+                    </div>
+                    <div class="testimonials__view">
+                      <div class="testimonials__square"></div>
+                      <div class="testimonials__text">
+                        <p>View</p><span class="icon svg-image-arrow45"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -295,10 +299,16 @@
       </div>
     </main>
     <footer class="footer">
+      <div class="footer__bg">
+        <picture class="picture object-fit-cover">
+          <source class="object-fit-cover" srcset="images/footer-bg.webp, images/footer-bg@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/footer-bg.png" srcset="images/footer-bg.png, images/footer-bg@2x.png 2x" alt=""/>
+        </picture>
+      </div>
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__info">
-            <div class="footer__logo"><img src="images/footer-logo.svg" alt=""></div>
+            <div class="footer__logo"><span class="icon svg-image-footer-logo"></span>
+            </div>
             <div class="footer__local">
               <p class="footer__adress">6700 Alexander Bell Drive, Suite 440, Columbia MD, 21046</p>
               <p class="footer__email"><a href="mailto:contactus@visionistinc.com">contactus@visionistinc.com</a></p>
@@ -440,6 +450,7 @@
       </svg>
       <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.514514295141!2d-76.81113858471214!3d39.18575623750033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e08986940b91%3A0x13fc41177f5c3ed6!2zNjcwMCBBbGV4YW5kZXIgQmVsbCBEciAjNDQwLCBDb2x1bWJpYSwgTUQgMjEwNDYsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1665744157654!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

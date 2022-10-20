@@ -6,13 +6,13 @@
 
 .svg-image-arrow-blue {
 	@extend %svg-common;
-	background-position: 36.76470588235294% 90.45801526717557%;
+	background-position: 66.17647058823529% 89.77272727272727%;
 	background-size: math.div(720, 40)*100% auto;
 	width: 40px;
 
 }
 @mixin svg-pos-image-arrow-blue {
-	background-position: 36.76470588235294% 90.45801526717557%;
+	background-position: 66.17647058823529% 89.77272727272727%;
 }
 @mixin svg-image-arrow-blue-hover {
 	.svg-image-arrow-blue {
@@ -35,13 +35,13 @@
 
 .svg-image-arrow-down {
 	@extend %svg-common;
-	background-position: 41.31054131054131% 84.64285714285714%;
+	background-position: 73.5042735042735% 84.04255319148936%;
 	background-size: math.div(720, 18)*100% auto;
 	width: 18px;
 
 }
 @mixin svg-pos-image-arrow-down {
-	background-position: 41.31054131054131% 84.64285714285714%;
+	background-position: 73.5042735042735% 84.04255319148936%;
 }
 @mixin svg-image-arrow-down-hover {
 	.svg-image-arrow-down {
@@ -62,15 +62,102 @@
 	height: 21px;
 }
 
-.svg-image-header-logo {
+.svg-image-arrow-small-blue {
+	@extend %svg-common;
+	background-position: 78.26704545454545% 82.57839721254355%;
+	background-size: math.div(720, 16)*100% auto;
+	width: 16px;
+
+}
+@mixin svg-pos-image-arrow-small-blue {
+	background-position: 78.26704545454545% 82.57839721254355%;
+}
+@mixin svg-image-arrow-small-blue-hover {
+	.svg-image-arrow-small-blue {
+		@include svg-pos-image-arrow-small-blue-hover
+	}
+}
+
+.svg-image-arrow-small-blue:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(16, 16)*100%;
+}
+
+.svg-image-arrow-small-blue-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-image-arrow45 {
+	@extend %svg-common;
+	background-position: 75.9601706970128% 82.86713286713287%;
+	background-size: math.div(720, 17)*100% auto;
+	width: 17px;
+
+}
+@mixin svg-pos-image-arrow45 {
+	background-position: 75.9601706970128% 82.86713286713287%;
+}
+@mixin svg-image-arrow45-hover {
+	.svg-image-arrow45 {
+		@include svg-pos-image-arrow45-hover
+	}
+}
+
+.svg-image-arrow45:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(17, 17)*100%;
+}
+
+.svg-image-arrow45-dims {
+	width: 17px;
+	height: 17px;
+}
+
+.svg-image-footer-logo {
 	@extend %svg-common;
 	background-position: 0 100%;
+	background-size: math.div(720, 200)*100% auto;
+	width: 200px;
+
+}
+@mixin svg-pos-image-footer-logo {
+	background-position: 0 100%;
+}
+@mixin svg-image-footer-logo-hover {
+	.svg-image-footer-logo {
+		@include svg-pos-image-footer-logo-hover
+	}
+}
+
+.svg-image-footer-logo:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(66, 200)*100%;
+}
+
+.svg-image-footer-logo-dims {
+	width: 200px;
+	height: 66px;
+}
+
+.svg-image-header-logo {
+	@extend %svg-common;
+	background-position: 36.76470588235294% 99.16317991631799%;
 	background-size: math.div(720, 176)*100% auto;
 	width: 176px;
 
 }
 @mixin svg-pos-image-header-logo {
-	background-position: 0 100%;
+	background-position: 36.76470588235294% 99.16317991631799%;
 }
 @mixin svg-image-header-logo-hover {
 	.svg-image-header-logo {
@@ -122,13 +209,13 @@
 
 .svg-image-quotes {
 	@extend %svg-common;
-	background-position: 27.24458204334365% 100%;
+	background-position: 58.204334365325074% 99.16317991631799%;
 	background-size: math.div(720, 74)*100% auto;
 	width: 74px;
 
 }
 @mixin svg-pos-image-quotes {
-	background-position: 27.24458204334365% 100%;
+	background-position: 58.204334365325074% 99.16317991631799%;
 }
 @mixin svg-image-quotes-hover {
 	.svg-image-quotes {
@@ -147,6 +234,35 @@
 .svg-image-quotes-dims {
 	width: 74px;
 	height: 64px;
+}
+
+.svg-image-star {
+	@extend %svg-common;
+	background-position: 70.60518731988472% 84.94623655913979%;
+	background-size: math.div(720, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-image-star {
+	background-position: 70.60518731988472% 84.94623655913979%;
+}
+@mixin svg-image-star-hover {
+	.svg-image-star {
+		@include svg-pos-image-star-hover
+	}
+}
+
+.svg-image-star:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(24, 26)*100%;
+}
+
+.svg-image-star-dims {
+	width: 26px;
+	height: 24px;
 }
 
 

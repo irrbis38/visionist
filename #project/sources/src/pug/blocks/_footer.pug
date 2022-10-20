@@ -1,10 +1,11 @@
 footer.footer
+    .footer__bg
+        +picture('footer-bg', 'png', '2x')
     .container
         .footer__wrapper
             .footer__info
                 .footer__logo
-                    //- +icon('footer-logo')
-                    img(src="images/footer-logo.svg" alt="")
+                    +icon('footer-logo')
                 .footer__local
                     p.footer__adress.
                         6700 Alexander Bell Drive, Suite 440, Columbia MD, 21046

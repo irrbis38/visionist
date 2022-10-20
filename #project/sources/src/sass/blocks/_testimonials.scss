@@ -1,11 +1,8 @@
 .testimonials {
-  height: 100vh;
-  min-height: 900px;
+  position: relative;
   background-color: var(--color-light-blue);
 
   & .container {
-    position: relative;
-    height: 100%;
     max-width: 1660px;
     padding: 0 30px;
   }
@@ -14,7 +11,7 @@
 .testimonials__block {
   position: relative;
   z-index: 3;
-  height: 100%;
+  min-height: 900px;
 }
 
 .testimonials__title {
@@ -111,10 +108,14 @@
   padding-top: 100px;
 }
 
+// .testimonials__infowrapper {
+
+// }
+
 .news-pathnew {
   position: absolute;
   top: -653px;
-  left: -20px
+  left: -20px;
 }
 
 .testimonials__range {
@@ -206,7 +207,7 @@
     color: var(--color-white);
   }
 
-  img {
+  span {
     display: block;
     width: 16px;
     height: 16px;
@@ -257,8 +258,8 @@
   }
 
   .testimonials__info {
-    left: 290px;
-    top: 200px;
+    left: 220px;
+    top: 240px;
     right: auto;
     width: 375px;
   }
@@ -288,25 +289,12 @@
     top: 70px;
   }
 
-  .testimonials__navbar {
-    width: 100%;
-    justify-content: space-between;
-  }
-
   .testimonials__title {
     font-size: 50px;
     bottom: -30px;
   }
 
   .testimonials__info {
-    left: 125px;
-    // top: 370px;
-  }  
-
-  .testimonials__range,
-  .testimonials__value,
-  .testimonials__name,
-  .testimonials__add {
-    display: none;
+    left: 20px;
   }
 }

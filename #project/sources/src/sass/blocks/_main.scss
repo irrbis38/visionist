@@ -1,9 +1,16 @@
 .main {
-  //   flex-grow: 1;
+  position: relative;
   overflow: hidden;
 
   & .container {
     max-width: 1660px;
     padding: 0 30px;
   }
+}
+
+.svg-image-pathnew {
+  position: absolute;
+  top: 16px;
+  left: 19%;
+  z-index: -1;
 }

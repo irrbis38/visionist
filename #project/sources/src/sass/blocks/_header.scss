@@ -1,6 +1,6 @@
 .header {
   height: 90px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   transition: all 0.2s linear;
 
   & .container {
@@ -133,7 +133,7 @@
 
 .menu__burger:before,
 .menu__burger:after {
-  content: '';
+  content: "";
   background-color: var(--color-white);
   position: absolute;
   width: 100%;
@@ -180,7 +180,8 @@
 }
 
 .burger__navbar {
-  display: flex;
+  // display: flex;
+  display: none;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -239,6 +240,10 @@
   .header {
     height: 60px;
     padding-top: 8px;
+  }
+
+  .burger__navbar {
+    display: flex;
   }
 
   .svg-image-header-logo,
